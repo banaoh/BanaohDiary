@@ -1,9 +1,18 @@
-<div>タイトル</div>
-<%= @article.title %>
-<div>記事内容</div>
-<%= @article.body %>
-<div>著者</div>
-<%= @article.author %>
+<h1>詳細ページ</h1>
+
+<div>
+    <div>
+        タイトル：<%= @article.title %>
+    </div>
+
+    <div>
+        記事内容：<%= @article.body %>
+    </div>
+
+    <div>
+        著者：<%= @article.author %>
+    </div>
+</div>
 
 <div>
     <%= link_to "編集する", edit_article_path %>
