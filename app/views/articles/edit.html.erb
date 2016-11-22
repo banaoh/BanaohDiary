@@ -1,14 +1,18 @@
+<h1>記事編集ページ</h1>
 <%= form_for @article do |f| %>
-  <div>
-    <p>title</p>
-    <%= f.text_field :title %>
+    <div>
+        <div>
+            タイトル：<%= f.text_field :title %>
+        </div>
     
-    <p>body</p>
-    <%= f.text_field :body %>
+        <div>
+            記事の内容：<%= f.text_field :body %>
+        </div>
     
-    <p>author</p>
-    <%= f.text_field :author %>
+        <div>
+            著者：<%= f.text_field :author %>
+        </div>
 
-    <%= f.submit "登録する" %>
+        <%= f.submit "登録する" %>
   </div>
 <% end %>
