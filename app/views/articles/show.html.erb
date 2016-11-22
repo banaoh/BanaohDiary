@@ -1,0 +1,12 @@
+<div>タイトル</div>
+<%= @article.title %>
+<div>記事内容</div>
+<%= @article.body %>
+<div>著者</div>
+<%= @article.author %>
+
+<div>
+    <%= link_to "編集する", edit_article_path %>
+    <%= link_to "削除する", @article, method: :delete %>
+    <%= link_to "トップへ戻る", articles_path %>
+</div>

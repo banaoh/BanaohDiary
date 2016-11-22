@@ -1,0 +1,14 @@
+<%= form_for @article do |f| %>
+  <div>
+    <p>title</p>
+    <%= f.text_field :title %>
+    
+    <p>body</p>
+    <%= f.text_field :body %>
+    
+    <p>author</p>
+    <%= f.text_field :author %>
+
+    <%= f.submit "登録する" %>
+  </div>
+<% end %>
